@@ -8,6 +8,9 @@ const gameName = new String("hello js");
 // console.log(gameName.__proto__);
 // console.log(gameName.length);
 // console.log(gameName.toUpperCase());
+
+//String Method Use//
+
 console.log(gameName.charAt(1));
 console.log(gameName.indexOf("e"));
 
