@@ -18,7 +18,7 @@ const numbers =[1,2,4,[5,6,7],[8,9,5],98,55];
 // const All_Numbers =numbers.flat(Infinity)
 // console.log(All_Numbers);
 
-// console.log(Array.isArray('hitesh'));
+// console.log(Array.isArray(numbers));
 // console.log(Array.from('hitesh'));
 
 const score1 = 100;
@@ -27,7 +27,7 @@ const score3 = 300;
 
 const All_Score = Array.of(score1,score2,score3);
 
-console.log(All_Score);
+// console.log(All_Score);
 
       
 
