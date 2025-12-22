@@ -27,15 +27,15 @@ const jsUser ={name:'selim Ahmed',
 // console.log(jsUser);
 
 
-jsUser.greeting = function(){
-    console.log("Hello ayman");
+// jsUser.greeting = function(){
+//     console.log("Hello ayman");
     
-}
+// }
 
 // jsUser.greeting()
 
 jsUser.greetingTwo = function(){
-    console.log(`Hello JS, ${this.name},my Location ${this.Location}`);
+    console.log(`Hello JS, ${this.lastLoginDays[1]},my Location ${this.Location}`);
     
 }
 jsUser.greetingTwo()
