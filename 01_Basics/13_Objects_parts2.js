@@ -29,12 +29,12 @@ tenderId.loggedIn = false;
 
 // console.log(AllObj === obj2);
 
-//  const user1={
-//      id:233,
-//      name:"md selim ahmed",
-//     }
+ const user1={
+     id:233,
+     name:"md selim ahmed",
+    }
 const userInfo =[
-//   user1,
+   user1,
     {
         id:545,
         name:"Shapla Ahmed"
@@ -45,4 +45,5 @@ const userInfo =[
     }
 ]
 
-console.log(Object.values(tenderId))
+console.log(Object.keys(userInfo))
+console.log(Object.values(userInfo))
