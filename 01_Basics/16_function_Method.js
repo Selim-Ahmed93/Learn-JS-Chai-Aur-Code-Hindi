@@ -15,23 +15,25 @@
 
 // console.log(addNumber(122,122))
 
-const countVowels = (str) => {
-    let count = 0
-  for (char of str) {
-    if (
-      char === "a" ||
-      char === "e" ||
-      char === "i" ||
-      char === "o" ||
-      char === "u"
-    )
-    count++
-  }
+// const countVowels = (str) => {
+//     let count = 0
+//   for (let char of str) {
+//     if (
+//       char === "a" ||
+//       char === "e" ||
+//       char === "i" ||
+//       char === "o" ||
+//       char === "u"
+//     )
+//     count++
+//   }
   
-  console.log(count)
-};
+//   console.log(count)
 
-countVowels("apnacollege");
+//   return count;
+// };
+
+// countVowels("apnacollege");
 
 // const sumTwoNumber = (...num) => {
 //   return num.reduce(
@@ -56,3 +58,14 @@ countVowels("apnacollege");
 // };
 
 // console.log(subStraction(54,46,43))
+
+const countVowels = (str) =>{
+
+  const vowel ="aeiouAEIOU";
+  const count = str.split("").filter(char => vowel.includes(char)).length;
+  
+  console.log(count);
+  return count;
+  
+}
+countVowels("apnacollege")
