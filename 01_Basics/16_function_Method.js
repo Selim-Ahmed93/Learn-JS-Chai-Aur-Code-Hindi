@@ -59,13 +59,54 @@
 
 // console.log(subStraction(54,46,43))
 
-const countVowels = (str) =>{
+// const countVowels = (str) =>{
 
-  const vowel ="aeiouAEIOU";
-  const count = str.split("").filter(char => vowel.includes(char)).length;
+//   const vowel ="aeiouAEIOU";
+//   const count = str.split("").filter(char => vowel.includes(char)).length;
   
-  console.log(count);
-  return count;
+//   console.log(count);
+//   return count;
   
-}
-countVowels("apnacollege")
+// }
+// countVowels("apnacollege")
+
+// const countVowels = (str) =>{
+//            vowel = "aeiouAEIOU";
+//   const count = str.split("").filter(char => vowel.includes(char)).length
+//   console.log(count);
+  
+//   return count;
+// }
+// countVowels('mycountrynamebangladesh')
+
+// this callback function
+
+// function abc(){
+//   console.log('hello world')
+// }
+
+// function newF(abc){
+//   console.log('i Love Coding');
+  
+//  abc();
+// }
+// console.log((newF(abc)));
+
+// lets start Javascript Methods
+
+// this is for each method
+
+const fruits =["Apple","mango","Banana","dragon"];
+
+     fruits.forEach((val,index)=>{
+        console.log(`Fruits index:${index} fruits:${val}`);
+        
+     })
+
+
+
+
+
+// const allFruits = fruits.forEach((_,idx) =>{
+// console.log(`Fruits index ${idx}:`);
+// // console.log(`All Items :${fullArr}`);
