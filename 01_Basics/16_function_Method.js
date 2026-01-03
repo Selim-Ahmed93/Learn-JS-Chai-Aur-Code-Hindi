@@ -96,12 +96,12 @@
 
 // this is for each method
 
-const fruits =["Apple","mango","Banana","dragon"];
+// const fruits =["Apple","mango","Banana","dragon"];
 
-     fruits.forEach((val,index)=>{
-        console.log(`Fruits index:${index} fruits:${val}`);
+//      fruits.forEach((val,index)=>{
+//         console.log(`Fruits index:${index} fruits:${val}`);
         
-     })
+//      })
 
 
 
@@ -110,3 +110,28 @@ const fruits =["Apple","mango","Banana","dragon"];
 // const allFruits = fruits.forEach((_,idx) =>{
 // console.log(`Fruits index ${idx}:`);
 // // console.log(`All Items :${fullArr}`);
+
+const Arr =[12,34,55,100];
+
+const newArr =Arr.filter((value)=>{
+    return value % 2 === 0;
+})
+console.log(newArr);
+
+
+
+// Arr.forEach((num)=>{
+    
+//     console.log(num*2);
+// });
+// const newArr = Arr.map((num)=>{
+//      return num*3;
+     
+//     });
+//     // console.log(newArr);
+
+//     newArr.push(33);
+
+//     console.log(newArr);
+    
+
