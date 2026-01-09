@@ -111,12 +111,12 @@
 // console.log(`Fruits index ${idx}:`);
 // // console.log(`All Items :${fullArr}`);
 
-const Arr =[12,34,55,100];
+// const Arr =[12,34,55,100];
 
-const newArr =Arr.filter((value)=>{
-    return value % 2 === 0;
-})
-console.log(newArr);
+// const newArr =Arr.filter((value)=>{
+//     return value % 2 === 0;
+// })
+// console.log(newArr);
 
 
 
@@ -133,5 +133,52 @@ console.log(newArr);
 //     newArr.push(33);
 
 //     console.log(newArr);
+
+
+    // const marks = [33,40,50,60,70,80,100];
+
+    // const getResult = marks.map(m => {
+        
+    //     return m*3;
+        
+    // });
+ 
+    // console.log(getResult);
+  
     
 
+    // const result = marks.map((mark) =>{
+    //    return mark * 3
+    // });
+
+    // console.log(result);
+
+
+    
+    //............ OOP IN JAVASCRIPT...............//
+
+//   this is pure objects in javascript //
+
+
+    // const players = {
+    //     name:'dkfdf',
+    //     ages:30,
+    //     skill:criket,
+    // }
+    
+    class player{
+        constructor(name,age,skill,run){
+          this.name = name;
+          this.age = age;
+          this.skill = skill;
+          this.run = run;
+        }
+    }
+
+    const shakib = new player('Shakib',40,'Bowler',3438);
+    const masrafi = new player('Masrafi',49,'fast Bowler');
+    const tamim = new player('Tamim',54,'Batting');
+
+    console.log(shakib)
+    // console.log( masrafi.age)
+    // console.log( tamim.age)
