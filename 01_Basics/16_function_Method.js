@@ -166,19 +166,51 @@
     //     skill:criket,
     // }
     
-    class player{
-        constructor(name,age,skill,run){
-          this.name = name;
-          this.age = age;
-          this.skill = skill;
-          this.run = run;
-        }
-    }
+    // class player{
+    //     constructor(name,age,skill,run){
+    //       this.name = name;
+    //       this.age = age;
+    //       this.skill = skill;
+    //       this.run = run;
+    //     }
+    // }
 
-    const shakib = new player('Shakib',40,'Bowler',3438);
-    const masrafi = new player('Masrafi',49,'fast Bowler');
-    const tamim = new player('Tamim',54,'Batting');
+    // const shakib = new player('Shakib',40,'Bowler',3438);
+    // const masrafi = new player('Masrafi',49,'fast Bowler');
+    // const tamim = new player('Tamim',54,'Batting');
 
-    console.log(shakib)
+    // console.log(shakib)
     // console.log( masrafi.age)
     // console.log( tamim.age)
+
+
+    // function calculateCart (price1,price2,...num){
+    //     return num;
+    
+        
+    // }
+
+    // console.log(calculateCart(200,400,300,2200));
+
+const user = {
+    userName:'md selim ahmed',
+    price:999,
+
+}
+
+function handleObjects (anyObjects){
+    console.log(`User Name : ${anyObjects.userName} price is: ${anyObjects.price}`);
+    
+}
+
+// handleObjects({
+//     userName:"md Ayman Ahmed",
+//     price:1222,
+// })
+
+const myArr = [220,442,544];
+
+function newArrValue (anyArr){
+      return anyArr[1];
+}
+    console.log(newArrValue(myArr));
