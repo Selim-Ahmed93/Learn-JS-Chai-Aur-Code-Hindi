@@ -192,21 +192,26 @@
 
     // console.log(calculateCart(200,400,300,2200));
 
-const user = {
+ /*
+
+ const user = {
     userName:'md selim ahmed',
     price:999,
 
 }
+/*
+/*
 
 function handleObjects (anyObjects){
     console.log(`User Name : ${anyObjects.userName} price is: ${anyObjects.price}`);
     
 }
 
-// handleObjects({
-//     userName:"md Ayman Ahmed",
-//     price:1222,
-// })
+ handleObjects({
+     userName:"md Ayman Ahmed",
+     price:1222,
+ })
+ /*
 
 const myArr = [220,442,544];
 
@@ -214,3 +219,74 @@ function newArrValue (anyArr){
       return anyArr[1];
 }
     console.log(newArrValue(myArr));
+    */
+
+
+    
+//  *********Function With Return Value****//
+
+/*
+function sum(num1,num2){
+    let addNumber = num1 * num2;
+  
+      return `this is sum value: ${addNumber}`;
+    console.log(addNumber);
+    
+}
+const result = sum(10,10)
+
+console.log(result);
+*/
+"use strict";
+
+
+/*
+function myName(firstName,lastName){
+         console.log('hello1');
+         console.log('hello2');
+         console.log('hello3');
+         console.log('hello4');
+
+         if (firstName == 'test') {
+            return 'First Name Test';
+         }
+         console.log('hello5');
+         console.log('hello6');
+
+         if(lastName == 'hello'){
+             return 'Last Name Test'
+         }
+
+         console.log('hello7');
+         console.log('hello8');
+         
+        //  return;
+         
+           
+};
+
+const myResult = myName('last', 'high');
+
+console.log(myResult);
+
+*/
+
+function memberRegistration(memberId,memberAge){
+       if(memberId == '12345' && memberAge >= 20){
+          return true;
+       }
+    
+        return false;
+       
+}
+
+const isValid = memberRegistration('12346', 19);
+
+if(isValid){
+   alert('User Is Valid')
+}
+else{
+    alert('User Is Not  Valid')
+}
+
+console.log(isValid);
