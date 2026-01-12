@@ -280,13 +280,13 @@ function memberRegistration(memberId,memberAge){
        
 }
 
-const isValid = memberRegistration('12346', 19);
+// const isValid = memberRegistration('12346', 19);
 
-if(isValid){
+if( memberRegistration('12346', 19)){
    alert('User Is Valid')
 }
 else{
     alert('User Is Not  Valid')
 }
 
-console.log(isValid);
+

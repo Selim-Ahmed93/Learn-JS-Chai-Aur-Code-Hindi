@@ -45,6 +45,7 @@ function one(){
 one()
 */
 
+/*
 if(true){
    const userName = 'Ayman Ahmed';
 
@@ -56,4 +57,30 @@ if(true){
    }
    
 }
-// console.log(userName);
+   */ 
+
+// *********************Interesting Facts***************//
+
+
+
+ //console.log(addTwo(5)); this is Hoisting cannot access before initialization  //
+
+//  console.log(addTwo(5)) // TDZ//
+//  let  addTwo = function (num){
+//      return num + 2
+//     }
+
+/*
+var a = 10;
+
+function test() {
+    console.log(a); 
+    var a = 20;
+    console.log(a);
+}
+
+test();
+*/
+
+
+
