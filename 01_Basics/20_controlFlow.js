@@ -37,3 +37,38 @@ if (temperature >= 50){
     console.log("Dhaka temperature 45");
     
 }
+
+
+const balance = 1000;
+
+if(balance <500){
+     console.log('less then 500');
+     
+} else if (balance <= 600){
+  console.log('balance 1000');
+  
+}
+
+else{
+    console.log('less then 1200');
+    
+}
+
+const userLoggedIn = true;
+const debitCard = false;
+const loggedInFromGoogle = true;
+const loggedInFromGmail = true;
+
+if(userLoggedIn && debitCard){
+    console.log('You Are Allow ');
+    
+}
+else{
+    console.log('You Are NoT Allow');
+    
+}
+
+if(loggedInFromGoogle || loggedInFromGmail){
+   console.log('You Can LoggedIn');
+   
+}
