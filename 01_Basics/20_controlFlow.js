@@ -19,56 +19,84 @@
 
 // <,>,=<,>=, ==, !=,===
 
-const score = 50;
+// const score = 50;
 
-if(score >= 100){
-    console.log('score is 200');
+// if(score >= 100){
+//     console.log('score is 200');
     
-} else{
-    console.log(`score is ${score}`);
+// } else{
+//     console.log(`score is ${score}`);
     
-}
-let temperature = 45
+// }
+// let temperature = 45
 
-if (temperature >= 50){
-    console.log("dhaka temperature 55");
+// if (temperature >= 50){
+//     console.log("dhaka temperature 55");
     
-} else{
-    console.log("Dhaka temperature 45");
+// } else{
+//     console.log("Dhaka temperature 45");
     
-}
+// }
 
 
-const balance = 1000;
+// const balance = 1000;
 
-if(balance <500){
-     console.log('less then 500');
+// if(balance <500){
+//      console.log('less then 500');
      
-} else if (balance <= 600){
-  console.log('balance 1000');
+// } else if (balance <= 600){
+//   console.log('balance 1000');
   
-}
+// }
 
-else{
-    console.log('less then 1200');
+// else{
+//     console.log('less then 1200');
     
-}
+// }
 
-const userLoggedIn = true;
-const debitCard = false;
-const loggedInFromGoogle = true;
-const loggedInFromGmail = true;
+// const userLoggedIn = true;
+// const debitCard = false;
+// const loggedInFromGoogle = true;
+// const loggedInFromGmail = true;
 
-if(userLoggedIn && debitCard){
-    console.log('You Are Allow ');
+// if(userLoggedIn && debitCard){
+//     console.log('You Are Allow ');
     
-}
-else{
-    console.log('You Are NoT Allow');
+// }
+// else{
+//     console.log('You Are NoT Allow');
     
-}
+// }
 
-if(loggedInFromGoogle || loggedInFromGmail){
-   console.log('You Can LoggedIn');
+// if(loggedInFromGoogle || loggedInFromGmail){
+//    console.log('You Can LoggedIn');
    
+// }
+
+// switch case 
+
+const month = 3;
+
+switch (month) {
+    case 1:
+        console.log('January');
+        
+        break;
+        case 2:
+            console.log('February');
+            break;
+            case 3:
+                console.log('March');
+                break;
+            case 4:
+                console.log('April');
+                 break;
+            case 5:
+              console.log('May');
+              break;
+                        
+    default:
+        console.log(' this not a Month ');
+        
+        break;
 }
