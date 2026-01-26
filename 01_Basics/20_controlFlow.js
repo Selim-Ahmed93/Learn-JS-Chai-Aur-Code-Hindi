@@ -123,30 +123,30 @@
 
 // lets start ..
 
-let value1 = true;
-let value2 = false;
+// let value1 = true;
+// let value2 = false;
 
-if(value1 && value2){
-     console.log('Its Right Value');
+// if(value1 && value2){
+//      console.log('Its Right Value');
      
-}
+// }
 
 // this code not execute thats mean && this operator check all value are true //
 
-if(value1 || value2){
-     console.log('execute This value');
+// if(value1 || value2){
+//      console.log('execute This value');
      
-}
+// }
 
 // this  code yes run OR || operator check one value true then code Run Oky//
 
 // Nullish Coalescing Operator ?? // 
 
-let val;
+// let val;
 //    val = 10 ?? 55;
 
 //    val  = null ?? 10; 
-val = undefined ?? 10;
+// val = undefined ?? 10;
 
 //    console.log(val);
    
@@ -155,10 +155,35 @@ val = undefined ?? 10;
 
  // condition ? true : False ;
 
- const unitPrice = 2000;
+//  const unitPrice = 2000;
 
- unitPrice >= 3500 ? console.log('You Can Buy It') : console.log('You Can Not Buy It');
+//  unitPrice >= 3500 ? console.log('You Can Buy It') : console.log('You Can Not Buy It');
 
- const coffePrice = 780;
- coffePrice >= 800 ? console.log('You Are Not Able') : console.log('You Are Able this time');
+//  const coffePrice = 780;
+//  coffePrice >= 800 ? console.log('You Are Not Able') : console.log('You Are Able this time');
+
+const car = {
+      name:'TOYOTA',
+      color:'Black',
+      model:2018,
+      start: function(){
+          console.log('Car Is Start');
+          
+      },
+      stop: function(){
+          console.log('Car is Stop');
+          
+      },
+      accelerator: function (){
+          console.log('Car is Running');
+          
+      }
+
+};
+car.start()
+car.accelerator()
+
+console.log(car.name);
+
+
  
