@@ -18,13 +18,13 @@
 
 const myArr = [4,5,6,3,6,7];
      for (const element of myArr) {
-        console.log(element);
+      //   console.log(element);
         if (element== 9) {
-         console.log('this is number 6');
+         // console.log('this is number 6');
          
         }
         else{
-         console.log('this number no find');
+         // console.log('this number no find');
          
         }
      }
@@ -52,8 +52,41 @@ const myArr = [4,5,6,3,6,7];
    //   console.log(map);
 
    for (const [key,value] of map) {
-      console.log(key,':-',value);
+      // console.log(key,':-',value);
       
    }
-     
-     
+     // forEach Loop In jS//
+
+     const coding = ["Java","Ruby","Python","JS"];
+         //  coding.forEach( (value) => console.log(value))
+
+      // coding.forEach((value,index) =>{
+      //     console.log(`Programming List:${index} ${value}`);
+       
+          
+      // })
+
+   //    function printMe(value,index,arr){
+   //             console.log(value,index,arr);
+               
+   //    }
+   //   coding.forEach(printMe)
+
+   const myCoding = [
+      {
+         languageName:"javascript",
+         fileName:"js",
+      },
+      {
+         languageName:"Python",
+         fileName:"python",
+      },
+      {
+         languageName:"Java",
+         fileName:"java"
+      },
+   ]
+   myCoding.forEach( (item,index) =>{
+      console.log(item.languageName,index);
+      
+   })
