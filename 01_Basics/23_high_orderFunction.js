@@ -30,11 +30,11 @@ const allCars = cars.filter( (car) =>{
                  .map( (num) => num +10)
                  .filter( (num) => num <= 400 )
 
-                 console.log(newNum);
+                //  console.log(newNum);
                  
 
 
-    // console.log(newNum);
+    //  console.log(newNum);
     // console.log(myNumber);
     
 
@@ -44,4 +44,39 @@ const allCars = cars.filter( (car) =>{
     // });
 
     // console.log(addValue);
+
+    // ................Reduce methods in Js...................//
+
+    const myArr = [5,6,4,7,8];
+
+    const myArr2 = myArr.reduce( (acc,curval) => acc + curval , 0)
+
+        // console.log(`acc : ${acc} cur : ${curval}`);
+        
+                        // return acc + curval;
+    
+
+    //  console.log(myArr2);
+
+    const shopingCard = [
+        {
+            itemsName: ' js course',
+            Price:2999,
+        },
+        {
+          itemsName:'Python Course',
+          Price:3999,
+        },
+        {
+            itemsName:'Mobail development course',
+            Price:6999,
+        },
+    ]
+
+    const totalPrice = shopingCard.reduce( (acc,curr) => acc + curr.Price ,0);
+
+    console.log(totalPrice);
+    
+
+
     
