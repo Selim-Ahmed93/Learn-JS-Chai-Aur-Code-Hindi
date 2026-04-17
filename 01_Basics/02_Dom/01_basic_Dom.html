@@ -4,14 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom Basic Learning</title>
+
+    <style>
+        .bg-black{
+                background: #212121;
+                color: #f1f1f1;
+        }
+    </style>
 </head>
-<body>
-    <div id="bg-black">
-        <h1>Hello Dom Manipulation</h1>
-        <p id="myparagraph"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolore maxime beatae consequuntur ullam, aliquid, quas ut deserunt assumenda possimus hic eum, pariatur dolores officia libero sint ratione necessitatibus earum.</p>
+<body class="bg-black">
+    <div>
+        <h1 id="title">Hello Dom Manipulation</h1>
+        <p id="my-p"> The Document Object Model (DOM) is essential in web development because it transforms static HTML into a dynamic, tree-like structure that JavaScript can manipulate in real-time. It enables web pages to update content, modify styles, and react to user inputs (clicks, forms) without reloading the page, creating interactive, engaging user experience</p>
     </div>
+    <form>
+         <input type="search" id="site-search" name="q" placeholder="Enter keywords..."></form>
+
+        <button id="Button" type="submit">Search</button>
+    <ul>
+        <li class="list-items">two</li>
+        <li class="list-items">three</li>
+        <li class="list-items">one</li>
+        <li class="list-items">four</li>
+    </ul>
 </body>
 <script>
-    document.getElementById("bg-black")
+    const title = document.getElementById('title')
+          title.style.fontSize = '40px';
+          title.style.textAlign = 'center';
+
+     const paragraph = document.getElementById("my-p");
+     paragraph.style.fontSize = '25px';
+     paragraph.style.fontFamily = 'Times New Roman';
+     
+     const myInput = document.getElementById('site-search');
+           myInput.style.padding = '4px';
+           myInput.style.borderRadius = '5px'
+
+    const myButton = document.getElementById('Button');
+          myButton.style.marginTop = '8px';
+          myButton.style.borderRadius = '5px'
+
+    const listItems = document.getElementsByClassName('list-items');
+    const  myItems = Array.from(listItems);
+    const colors = ['red', 'blue', 'green', 'orange'];
+         myItems.forEach(function (list,i){
+                list.style.color = colors[i];
+         })           
+
 </script>
 </html>
