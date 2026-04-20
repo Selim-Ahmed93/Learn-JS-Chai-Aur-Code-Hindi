@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom | createElements</title>
+</head>
+<body style="background-color: #212121; color: aliceblue;">
+    
+</body>
+<script>
+    const createElement = document.createElement('div');
+    createElement.className ='parent';
+    createElement.setAttribute('title','MyTitle');
+    createElement.style.backgroundColor ='green';
+    createElement.style.padding='12px';
+    createElement.setAttribute('newTitle','Title')
+    const addText = document.createTextNode('Hello Javascript');
+    createElement.appendChild(addText);
+    document.body.appendChild(createElement)
+
+    const newText = document.createTextNode('New Element');
+    createElement.appendChild(newText);
+    document.body.appendChild(createElement)
+    // const addText = document.createTextNode('Chai Aur Code');
+    //       createElement.appendChild(addText);
+    //       document.body.appendChild(createElement)
+</script>
+</html>

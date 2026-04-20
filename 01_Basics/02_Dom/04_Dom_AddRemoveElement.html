@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom | CreateAddRemoveElement</title>
+</head>
+<body style="background-color: #212121; color: white">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+         function AddThreeLan (myLan){
+             const li = document.createElement('li');
+             li.innerHTML = `${myLan}`;
+             document.querySelector('.language').appendChild(li)
+         }
+
+        AddThreeLan('Go Lang')
+
+
+       function newProgL(progLanguage){
+         const li = document.createElement('li');
+         li.innerHTML = `${progLanguage}`;
+         document.querySelector('.language').appendChild(li)
+       }
+        newProgL("PHP")
+
+
+    function addLanguage(langName){
+     const li = document.createElement('li');
+     li.innerHTML =`${langName}`;
+     document.querySelector(".language").appendChild(li)
+
+    }
+    addLanguage("Python")
+
+    function AddTwoLanguage(langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`;
+        document.querySelector('.language').appendChild(li)
+    }
+    AddTwoLanguage("java")
+</script>
+</html>
