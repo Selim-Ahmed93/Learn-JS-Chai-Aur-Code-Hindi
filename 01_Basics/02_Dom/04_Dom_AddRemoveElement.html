@@ -11,9 +11,22 @@
     </ul>
 </body>
 <script>
+
+   const py = document.querySelector('li:nth-child(1)');
+
+       py.innerHTML = 'TypeScript';
+
+      const newLI = document.createElement('li');
+
+      newLI.innerHTML = 'Mojo';
+      py.replaceWith(newLI)
+
+        
+
+
          function AddThreeLan (myLan){
              const li = document.createElement('li');
-             li.innerHTML = `${myLan}`;
+             li.appendChild(document.createTextNode(myLan))
              document.querySelector('.language').appendChild(li)
          }
 

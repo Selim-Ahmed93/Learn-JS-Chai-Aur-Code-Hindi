@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Switcher Apps</title>
+    <style>
+        html{
+            margin: 0;
+        }
+        span{
+            display:block;
+        }
+        .Canvas {
+           margin: 100px auto 100px;
+           width: 80%;
+           text-align: center;
+           }
+       .Button {
+        width: 100px;
+        height: 100px;
+        border: solid black 2px;
+        display: inline-block;
+        }
+
+
+#Grey {
+  background:gray;
+}
+#White {
+  background:white;
+}
+#Purple {
+  background:purple;
+}  
+#Green{
+    background-color: green;
+}  
+#Yellow{
+    background-color: yellow;
+}
+    </style>
+</head>
+<body>
+    <div class="Canvas">
+   <h1>Color Switcher</h1>
+   <span class="Button" id="Grey"></span>
+   <span class="Button" id="White"></span>
+   <span class="Button" id="Purple"></span>
+   <span class="Button" id="Green"></span>
+   <span class="Button" id="Yellow"></span>
+
+    </div>
+  
+</body>
+
+<script>
+    const buttons = document.querySelectorAll('.Button');
+    const body = document.querySelector('body');
+    buttons.forEach((button)=>{
+        // console.log(button)
+      button.addEventListener('click', (e) =>{
+        // console.log(e)
+        // console.log(e.target)
+        // e.target
+        if (e.target.id === 'Grey') {
+            body.style.backgroundColor = e.target.id
+        }
+       if(e.target.id === 'White'){
+          body.style.backgroundColor = e.target.id
+       }
+       if(e.target.id === 'Purple'){
+           body.style.backgroundColor = e.target.id
+       }
+       if(e.target.id === 'Green'){
+          body.style.backgroundColor = e.target.id
+       }
+       if(e.target.id === 'Yellow'){
+          body.style.backgroundColor = e.target.id
+       }
+      })
+    })
+
+    
+</script>
+</html>
