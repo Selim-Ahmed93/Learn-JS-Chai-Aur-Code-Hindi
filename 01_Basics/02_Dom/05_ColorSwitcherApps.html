@@ -55,32 +55,52 @@
 </body>
 
 <script>
-    const buttons = document.querySelectorAll('.Button');
-    const body = document.querySelector('body');
-    buttons.forEach((button)=>{
-        // console.log(button)
-      button.addEventListener('click', (e) =>{
-        // console.log(e)
-        // console.log(e.target)
-        // e.target
-        if (e.target.id === 'Grey') {
-            body.style.backgroundColor = e.target.id
-        }
-       if(e.target.id === 'White'){
-          body.style.backgroundColor = e.target.id
-       }
-       if(e.target.id === 'Purple'){
-           body.style.backgroundColor = e.target.id
-       }
-       if(e.target.id === 'Green'){
-          body.style.backgroundColor = e.target.id
-       }
-       if(e.target.id === 'Yellow'){
-          body.style.backgroundColor = e.target.id
-       }
-      })
-    })
+   const buttons = document.querySelectorAll(".Button");
+   const Body = document.body;
+        //  const Body = document.querySelector('body');
+        // console.dir(buttons)
+        buttons.forEach((btn) =>{
+           btn.addEventListener('click',(e)=>{
 
+            // This code use If Else Statement...
+
+            //  if(e.target.id === 'Grey'){
+            //    Body.style.backgroundColor = e.target.id
+            //  }
+            //   if(e.target.id === 'White'){
+            //    Body.style.backgroundColor = e.target.id
+            //  }
+            //   if(e.target.id === 'Purple'){
+            //    Body.style.backgroundColor = e.target.id
+            //  }
+            //   if(e.target.id === 'Green'){
+            //    Body.style.backgroundColor = e.target.id
+            //  }
+            //   if(e.target.id === 'Yellow'){
+            //    Body.style.backgroundColor = e.target.id
+            //  }
+
+            // THis Code Use Switch Statement // 
+            switch (e.target.id) {
+                case 'Grey':
+                    Body.style.backgroundColor = e.target.id;
+                    break;
+                 case 'White':
+                    Body.style.backgroundColor = e.target.id;
+                    break;
+                  case 'Purple':
+                        Body.style.backgroundColor = e.target.id;  
+                     break;
+                  case 'Green':
+                     Body.style.backgroundColor = e.target.id;
+                     break;
+                  case 'Yellow':
+                    Body.style.backgroundColor = e.target.id;   
+                default:
+                    break;
+            }
+           });
+        });
     
 </script>
 </html>
