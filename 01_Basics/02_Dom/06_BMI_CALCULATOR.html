@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI-Calculator</title>
+    <style>
+      body{
+        background-color: #f2f2f2;
+        font-family: sans-serif;
+        text-align: center;
+    
+      }
+      h1{
+        font-size: x-large;
+        color: darkgreen;
+      }
+    #weight{
+        padding:5px;
+        border-radius:4px;
+    }
+    #height{
+        padding:5px;
+        border-radius:4px;
+    }
+  #btn{
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 9px 18px;
+  font-size: 14px;
+  font-weight: 500; 
+  }
+  #result{
+    color: darkgreen;
+    font-family:sans-serif ;
+  }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>BMI Calculator</h1>
+        <p id="info">Please Enter Your Weight (KG) & Height(CM)</p>
+
+        <p class="text">Weight</p>
+        <input type="text" id="weight">
+        <p class="text">Height</p>
+        <input type="text" id="height">
+        <p id="result"></p>
+        <button id="btn" onclick="bmi()">Calculate</button>
+    </div>
+</body>
+<script>
+
+
+  function bmi() {
+    const w = parseFloat(document.getElementById("weight").value);
+    const h = parseFloat(document.getElementById("height").value);
+    const display = document.getElementById("result");
+
+    
+    if (isNaN(w) || w <= 0) {
+        display.innerHTML = "Please Give A Valid Weight (Kg)";
+    } 
+    else if (isNaN(h) || h <= 0) {
+        display.innerHTML = "Please Give A Valid Height (Cm)";
+    } 
+    else {
+        
+        const bmiValue = w / ((h / 100) * (h / 100));
+        const total = bmiValue.toFixed(2);
+        display.innerHTML = "Your BMI IS " + total;
+    }
+  }
+  //  const w = parseFloat(document.getElementById("weight").value);
+  //  const h = parseFloat(document.getElementById("height").value);
+  //  const bmi = w / (h / 100 * h / 100);
+  //  const total = bmi.toFixed(2);
+  //  document.getElementById("result").innerHTML = "You BMI IS " + total;
+  //  if (w === '' || w < 0 || isNaN(w)) {
+  //   result.innerHTML = `Please Give A Valid Weight (Kg)${w}`
+  //  }
+  //  if (h === '' || h < 0 || isNaN(h)) {
+  //   result.innerHTML = `Please Give A Valid Height (Cm)${h}`
+  //  }
+
+
+
+
+
+
+
+
+
+
+
+
+//    const Weight = document.getElementById("weight").value;
+//    const Height = document.getElementById("height").value;
+//    const BTN = document.getElementById("btn");
+//    function bmi(){
+//        const Height = document.getElementById("height").value;
+//           const Weight = document.getElementById("weight").value;
+//          const BTN = document.getElementById("btn");
+//          const bmi = Weight / (Height/100 * Height /100);
+//          const total = bmi.toFixed(2)
+//          document.getElementById("result").innerHTML = "You BMI IS " +total
+
+//       }    
+   
+</script>
+</html>
