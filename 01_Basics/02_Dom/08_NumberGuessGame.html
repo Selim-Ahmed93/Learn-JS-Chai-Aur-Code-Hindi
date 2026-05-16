@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guess Game</title>
+    <style>
+      .Start-Game{
+        display: none;
+      }
+    </style>
+</head>
+<body>
+    
+        <h1>Number Guess Game</h1>
+        <p>Enter A Guess Between 0 to 100</p>
+        <p id="Result">Result: </p>
+        <P id="Attempt">User Attempt The Number</P>
+        <form>
+    <input class="input-field" type="number" placeholder="Please Enter Number">
+    
+    
+    <div class="button">
+        <button type="submit" class="SubBtn">Submit</button>
+        <button  type="button" class="Start-Game">Start Game</button>
+    </div>
+</form>
+    
+</body>
+<script>
+    let randomNumber = Math.round(Math.random() * 100);
+    const inputField = document.querySelector(".input-field");
+    const form = document.querySelector('form');
+    const Result = document.querySelector("#Result");
+    const userAttempt = document.querySelector("#Attempt");
+    const startButton = document.querySelector(".Start-Game");
+
+    let attempts = 0;
+    // console.log(Result)
+    
+    form.addEventListener('submit', function(e){
+        e.preventDefault()
+        const input = parseInt(inputField.value);
+
+        attempts ++;
+        userAttempt.innerHTML = `User Attempted: ${attempts} times`;
+    //    console.log('submitted')
+       
+       if(isNaN(input)){
+          Result.innerHTML = 'Please Enter A Number';
+          Result.style.color = 'orange'
+          return;
+       }
+       if (input === randomNumber) {
+         Result.innerHTML = `Congratulation You Guess The Number ${attempts}`
+         Result.style.color = 'green'
+         
+       }else if(input > randomNumber){
+            Result.innerHTML = 'Its too High'
+            Result.style.color = 'red'
+       }else{
+        Result.innerHTML = 'Its Too Low';
+        Result.style.color = 'Purple'
+       }
+       inputField.value = '';
+
+       if (input === randomNumber) {
+    
+    Result.innerHTML = `Congratulations! You guessed it in ${attempts} attempts. Starting a new game...`;
+    Result.style.color = 'green';
+
+    
+    attempts = 0;
+    userAttempt.innerHTML = `User Attempt: ${attempts}`;
+
+    randomNumber = Math.round(Math.random() * 100);
+    
+}
+    });
+    
+</script>
+</html>
